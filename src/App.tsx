@@ -1,5 +1,6 @@
 import "./App.css";
-import { Gestures } from "./animations/Gestures";
+import { AnimationControl } from "./animations/AnimationControls";
+// import { Gestures } from "./animations/Gestures";
 // import { OnScroll } from "./animations/OnScroll";
 // import { BFM } from "./animations/BasicFramerMotion";
 
@@ -14,7 +15,8 @@ function App() {
     >
       {/* <OnScroll /> */}
       {/* <BFM /> */}
-      <Gestures />
+      {/* <Gestures /> */}
+      <AnimationControl />
     </div>
   );
 }
