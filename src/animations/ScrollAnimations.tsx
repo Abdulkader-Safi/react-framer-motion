@@ -1,16 +1,25 @@
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export const ScrollAnimations = () => {
   const { scrollYProgress } = useScroll();
+
+  // const scaleX = useSring(scrollYProgress);
+
+  const background = useTransform(
+    scrollYProgress,
+    [0, 0.25, 0.5, 0.75, 1],
+    ["red", "red", "yellow", "green", "blue"],
+  );
 
   return (
     <div>
       <motion.div
         style={{
+          // scaleX: scaleX,
           scaleX: scrollYProgress,
           transformOrigin: "left",
-          background:
-            "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(97,121,9,1) 35%, rgba(133,8,91,1) 65%, rgba(0,212,255,1) 100%)",
+          // background: "blue",
+          background: background,
           position: "sticky",
           top: 0,
           width: "100%",
