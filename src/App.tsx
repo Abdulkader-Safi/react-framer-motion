@@ -1,5 +1,6 @@
 import "./App.css";
-import { ViewBasedAnimations } from "./animations/ViewBasedAnimations";
+import { ScrollAnimations } from "./animations/ScrollAnimations";
+// import { ViewBasedAnimations } from "./animations/ViewBasedAnimations";
 // import { AnimationControl } from "./animations/AnimationControls";
 // import { Gestures } from "./animations/Gestures";
 // import { OnScroll } from "./animations/OnScroll";
@@ -7,18 +8,13 @@ import { ViewBasedAnimations } from "./animations/ViewBasedAnimations";
 
 function App() {
   return (
-    <div
-      style={{
-        width: "100vw",
-        minHeight: "100vh",
-        overflow: "hidden",
-      }}
-    >
+    <div>
       {/* <OnScroll /> */}
       {/* <BFM /> */}
       {/* <Gestures /> */}
       {/* <AnimationControl /> */}
-      <ViewBasedAnimations />
+      {/* <ViewBasedAnimations /> */}
+      <ScrollAnimations />
     </div>
   );
 }
