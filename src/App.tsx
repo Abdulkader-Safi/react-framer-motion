@@ -1,6 +1,7 @@
 import "./App.css";
-import { BFM } from "./animations/BasicFramerMotion";
-import { OnScroll } from "./animations/OnScroll";
+import { Gestures } from "./animations/Gestures";
+// import { OnScroll } from "./animations/OnScroll";
+// import { BFM } from "./animations/BasicFramerMotion";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       }}
     >
       {/* <OnScroll /> */}
-      <BFM />
+      {/* <BFM /> */}
+      <Gestures />
     </div>
   );
 }

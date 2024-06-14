@@ -20,6 +20,8 @@ export const BFM = () => {
           fontSize: "1.8rem",
           border: "none",
           cursor: "pointer",
+          borderRadius: 9,
+          padding: 10,
         }}
         onClick={() => setIsVisible((prev) => !prev)}
         layout
