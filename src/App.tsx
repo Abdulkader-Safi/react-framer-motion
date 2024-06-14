@@ -1,4 +1,5 @@
 import "./App.css";
+import { BFM } from "./animations/BasicFramerMotion";
 import { OnScroll } from "./animations/OnScroll";
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
         overflow: "hidden",
       }}
     >
-      <OnScroll />
+      {/* <OnScroll /> */}
+      <BFM />
     </div>
   );
 }
