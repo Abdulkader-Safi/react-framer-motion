@@ -1,5 +1,6 @@
 import "./App.css";
-import { AnimationControl } from "./animations/AnimationControls";
+import { ViewBasedAnimations } from "./animations/ViewBasedAnimations";
+// import { AnimationControl } from "./animations/AnimationControls";
 // import { Gestures } from "./animations/Gestures";
 // import { OnScroll } from "./animations/OnScroll";
 // import { BFM } from "./animations/BasicFramerMotion";
@@ -16,7 +17,8 @@ function App() {
       {/* <OnScroll /> */}
       {/* <BFM /> */}
       {/* <Gestures /> */}
-      <AnimationControl />
+      {/* <AnimationControl /> */}
+      <ViewBasedAnimations />
     </div>
   );
 }
