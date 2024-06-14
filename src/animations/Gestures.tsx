@@ -10,6 +10,7 @@ export const Gestures = () => {
         gap: "0.8rem",
       }}
     >
+      {/* Motion Config will apply the configration to all the motion tags in it, you can override it by reconfigure the tag in it */}
       <MotionConfig
         transition={{
           duration: 0.125,
