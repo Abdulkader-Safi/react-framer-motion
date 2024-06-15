@@ -9,16 +9,27 @@ import { Gestures } from "../animations/Gestures";
 import { AnimationControl } from "../animations/AnimationControls";
 import { ViewBasedAnimations } from "../animations/ViewBasedAnimations";
 import { ScrollAnimations } from "../animations/ScrollAnimations";
+import { HorizontalScrollCarousel } from "../animations/HorizontalScrollCarousel";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<OnScroll />} />
+
       <Route path="/bfm" element={<BFM />} />
+
       <Route path="/gestures" element={<Gestures />} />
+
       <Route path="/animation-control" element={<AnimationControl />} />
+
       <Route path="/view-based-animation" element={<ViewBasedAnimations />} />
+
       <Route path="/progress-bar" element={<ScrollAnimations />} />
+
+      <Route
+        path="/horizontal-scroll-carousel"
+        element={<HorizontalScrollCarousel />}
+      />
     </>,
   ),
 );
