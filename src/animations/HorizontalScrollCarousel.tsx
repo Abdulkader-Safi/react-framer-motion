@@ -60,20 +60,21 @@ const cards: CardType[] = [
   },
   {
     id: 11,
-    title: "title 10",
+    title: "title 11",
     url: "http://dummyimage.com/127x100.png/5fa2dd/ffffff",
   },
   {
     id: 12,
-    title: "title 10",
+    title: "title 12",
     url: "http://dummyimage.com/127x100.png/5fa2dd/ffffff",
   },
   {
     id: 13,
-    title: "title 10",
+    title: "title 13",
     url: "http://dummyimage.com/127x100.png/5fa2dd/ffffff",
   },
 ];
+
 export const HorizontalScrollCarousel = () => {
   return (
     <div className="bg-neutral-800">
@@ -100,7 +101,7 @@ const ScrollArea = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-81%"]);
 
   return (
     <section ref={targetRef} className="relative h-[900vh] bg-neutral-900">
